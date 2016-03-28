@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	db   gorm.DB
+	db   *gorm.DB
 	once sync.Once
 )
 
