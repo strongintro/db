@@ -17,6 +17,7 @@ var (
 
 func connect() {
 	var err error
+	log.Println(os.Getenv("DATABASE_URL"))
 	db, err = gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 
 	if err != nil {
