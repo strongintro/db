@@ -45,7 +45,7 @@ func connect() {
 	}
 }
 
-func DB() gorm.DB {
+func DB() *gorm.DB {
 	once.Do(connect)
 	return db
 }
